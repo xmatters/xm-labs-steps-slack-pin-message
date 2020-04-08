@@ -23,7 +23,7 @@ This step uses the Slack API to add a pin to a specific message.
 # Installation
 
 ## Slack Setup
-You'll need to setup a slack app in order to pin messages. Follow these instructions for setting up an app and connecting it to your workspace. Make sure to give it `chat:write` and `pins:wrie` as User Token Scopes.
+You'll need to setup a slack app in order to pin messages. Follow these instructions for setting up an app and connecting it to your workspace. Make sure to give it `chat:write` and `pins:write` as User Token Scopes.
 [App Setup](https://api.slack.com/authentication/basics)
 
 Once done, take your OAuth User Access Token and create a constant in xMatters. Use this constant in the inputs of this step.
