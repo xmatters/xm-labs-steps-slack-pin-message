@@ -23,14 +23,13 @@ This step uses the Slack API to add a pin to a specific message.
 # Installation
 
 ## Slack Setup
-You'll need to setup a Slack app in order to pin messages. Follow these instructions for setting up an app and connecting it to your workspace. Make sure to give it `chat:write` and `pins:write` as User Token Scopes.
-[App Setup](https://api.slack.com/authentication/basics)
+You'll need to setup a Slack app in order to pin messages. Follow [these instructions](https://api.slack.com/authentication/basics) for setting up an app and connecting it to your workspace. Make sure to give it `chat:write` and `pins:write` as User Token Scopes. You should only need to follow the instructions up to the end of the **Installing the app to a workspace** Section.
 
-Once done, take your OAuth User Access Token and create a constant in xMatters. Use this constant in the inputs of this step.
+Once done, take your OAuth User Access Token, found in the **OAuth & Permissions** section of your [app's information](https://api.slack.com/apps), and create a constant in xMatters. Use this constant in the inputs of this step.
 
 
 ## xMatters Setup
-1. Download the [SlackPinSteps.zip](SlackPinSteps.zip) file onto your local computer
+1. Download the [SlackPinMessageSteps.zip](SlackPinMessageSteps.zip) file onto your local computer
 2. Navigate to the Workflows tab of your xMatters instance
 3. Click Import, and select the zip file you just downloaded
 
