@@ -32,6 +32,8 @@ Once done, take your OAuth User Access Token, found in the **OAuth & Permissions
 1. Download the [SlackPinMessageSteps.zip](SlackPinMessageSteps.zip) file onto your local computer
 2. Navigate to the Workflows tab of your xMatters instance
 3. Click Import, and select the zip file you just downloaded
+4. Create a Token Constant with the value of the User Access Token above
+5. Create an Endpoint setup with slack
 
 
 ## Usage
@@ -40,7 +42,7 @@ The **Slack Pin Message** step is now available in your custom steps. So navigat
 ### Inputs
 | Name  | Required? | Min | Max | Help Text | Default Value | Multiline |
 | ----- | ----------| --- | --- | --------- | ------------- | --------- |
-| Channel | Yes | 0 | 2000 | The human readable channel name, or the channel ID | | No |
+| Channel ID | Yes | 0 | 2000 | Channel ID (not the human readable Channel Name) | | No |
 | Timestamp | Yes | 0 | 2000 | The timestamp of the message to pin | | No |
 | Token | Yes | 0 | 2000 | The OAuth User Access Token from Slack | | No |
 
