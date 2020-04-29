@@ -23,7 +23,7 @@ This step uses the Slack API to add a pin to a specific message.
 # Installation
 
 ## Slack Setup
-You'll need to setup a Slack app in order to pin messages. Follow [these instructions](https://api.slack.com/authentication/basics) for setting up an app and connecting it to your workspace. Make sure to give it `chat:write` and `pins:write` as User Token Scopes. You should only need to follow the instructions up to the end of the **Installing the app to a workspace** Section.
+You'll need to setup a Slack app in order to pin messages. Follow [these instructions](https://github.com/xmatters/xm-labs-slack#slack-1) for setting up an app and connecting it to your workspace. Make sure to give it `chat:write` and `pins:write` as User Token Scopes. You should only need to follow the instructions up to the end of the **Installing the app to a workspace** Section.
 
 Once done, take your OAuth User Access Token, found in the **OAuth & Permissions** section of your [app's information](https://api.slack.com/apps), and create a constant in xMatters. Use this constant in the inputs of this step.
 
@@ -32,6 +32,8 @@ Once done, take your OAuth User Access Token, found in the **OAuth & Permissions
 1. Download the [SlackPinMessageSteps.zip](SlackPinMessageSteps.zip) file onto your local computer
 2. Navigate to the Workflows tab of your xMatters instance
 3. Click Import, and select the zip file you just downloaded
+4. Create a Token Constant with the value of the User Access Token above
+5. Create an Endpoint setup with slack
 
 
 ## Usage
@@ -40,7 +42,7 @@ The **Slack Pin Message** step is now available in your custom steps. So navigat
 ### Inputs
 | Name  | Required? | Min | Max | Help Text | Default Value | Multiline |
 | ----- | ----------| --- | --- | --------- | ------------- | --------- |
-| Channel | Yes | 0 | 2000 | The human readable channel name, or the channel ID | | No |
+| Channel ID | Yes | 0 | 2000 | Channel ID (not the human readable Channel Name) | | No |
 | Timestamp | Yes | 0 | 2000 | The timestamp of the message to pin | | No |
 | Token | Yes | 0 | 2000 | The OAuth User Access Token from Slack | | No |
 
